@@ -1,0 +1,46 @@
+using System;
+
+namespace VerificaNumeroPrimo
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+
+            Console.Write("Digite um número inteiro: ");
+            int numero = int.Parse(Console.ReadLine());
+
+            if (IsPrimo(numero))
+            {
+                Console.WriteLine(" é um número primo.");
+            }
+            else
+            {
+                Console.WriteLine(" não é um número primo.");
+            }
+
+            Console.Write("Pressione qualquer tecla para continuar . . . ");
+            Console.ReadKey(true);
+        }
+
+        static bool IsPrimo(int num)
+        {
+ 
+            if (num <= 1)
+            {
+                return false;
+            }
+
+
+            for (int i = 2; i <= Math.Sqrt(num); i++)
+            {
+                if (num % i == 0)
+                {
+                    return false; 
+                }
+            }
+
+            return true; 
+        }
+    }
+}
