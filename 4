@@ -1,0 +1,26 @@
+using System;
+
+namespace higor22
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+			int soma = 0;
+			Console.Write("digite um numero inteiro:");
+			int numero = int.Parse (Console.ReadLine());
+		
+			
+				for  (int i = 1; i <= numero; i++){
+				
+				soma += i;
+				
+				Console.WriteLine(i);
+			} 
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
