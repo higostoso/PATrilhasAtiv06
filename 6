@@ -1,0 +1,44 @@
+using System;
+
+namespace kgukjt
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+
+			
+			Console.WriteLine("Digite um numero inteiro:");
+			 	
+			int seqnum = int.Parse(Console.ReadLine());
+			
+			int numMaior = int.MinValue;
+			 
+			
+			for   (int i = 1; i <= seqnum; i++){
+				
+				Console.WriteLine("digite o {0}º numero", i);
+			 		int numero = int.Parse(Console.ReadLine());
+				
+				
+			 		
+				
+				if(numero > numMaior){
+				
+			 			
+			 			numMaior = numero;
+				}
+			
+			
+			}
+        
+			Console.WriteLine("o maior numero inserido foi:" + numMaior);
+
+      
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+			
+		   }
+		}
+	}
