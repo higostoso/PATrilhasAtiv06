@@ -1,0 +1,56 @@
+using System;
+
+namespace kgukjt
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{ 
+			
+				
+			Console.WriteLine("numeros primos de 1 a 100:");
+			int numprimo = int.Parse(Console.ReadLine());
+			
+			 for (int i = 2; i <= 100; i++){
+				
+				bool isPrime = true;
+				
+				for(int j = 2; j <= Math.Sqrt(i); j++){
+				
+					if(i % j == 0){
+					
+						isPrime = false;
+						break;
+					
+					
+					
+					}
+				
+				
+				
+				}
+			 
+			 if (isPrime){
+			 	
+			 		Console.Write(i + " ");
+			 	
+			 	}
+		  }
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+           
+		 
+		}
+	
+	}
+	
+}
